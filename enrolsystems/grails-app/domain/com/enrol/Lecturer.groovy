@@ -8,6 +8,12 @@ String subject
 String lecturerEmail
 String office
 String bio
+Course theCourse
+static hasMany=[modules:Module]
+
+String toString(){
+return fullName
+}
 
 
     static constraints = {
@@ -17,6 +23,7 @@ subject nullable: false, blank:false
 lecturerEmail nullable: false, blank:false, email:true
 office nullable:false, blank:false 
 bio nullable:false, blank:false, maxSize:5000, widget:'textarea'
+theCourse nullable:true, blank:true
     }
 }
     

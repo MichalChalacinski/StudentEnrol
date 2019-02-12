@@ -6,7 +6,6 @@ String module_title
 String module_code
 int credits
 String lecturer
-String course
 String description
 
 

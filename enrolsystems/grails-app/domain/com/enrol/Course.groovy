@@ -4,13 +4,17 @@ class Course {
 String department
 String courseTitle
 String courseCode
-String courseLeader
+Lecturer courseLeader
 Date startDate
 Date endDate
 String description
 String studyMode
 int numberOfStudents
 double tuitionFees
+
+String toString(){
+return courseTitle
+}
 
     static constraints = {
 courseTitle nullable: false, blank: false
